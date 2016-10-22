@@ -195,18 +195,20 @@ Unsure where to begin contributing to Fluany? You can start by looking through t
 All JavaScript must adhere to [JavaScript Semi-Standard Style](https://github.com/Flet/semistandard).
 
 * Prefer the object spread operator (`{...anotherObj}`) to `Object.assign()`
-* Inline `export`s with expressions whenever possible
+
   ```js
   // Use this:
+  class ClassName {
+
+  }
+ 
+  export default ClassName
+ 
+  // Instead of: 
   export default class ClassName {
 
   }
 
-  // Instead of:
-  class ClassName {
-
-  }
-  export default ClassName
   ```
 
 ## Additional Notes
